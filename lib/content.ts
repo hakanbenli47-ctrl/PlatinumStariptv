@@ -24,7 +24,7 @@ const categoryImages = {
 
 export const content = {
   de: {
-    brand: "NEOT VIP",
+    brand: "PlatinumStar İPTV",
     nav: {
       home: "Start",
       experience: "Erlebnis",
@@ -293,7 +293,7 @@ export const content = {
   },
 
   en: {
-    brand: "NEOT VIP",
+   brand: "PlatinumStar İPTV",
     nav: {
       home: "Home",
       experience: "Experience",
@@ -562,7 +562,7 @@ export const content = {
   },
 
   fr: {
-    brand: "NEOT VIP",
+    brand: "PlatinumStar İPTV",
     nav: {
       home: "Accueil",
       experience: "Expérience",
@@ -831,7 +831,7 @@ export const content = {
   },
 
   nl: {
-    brand: "NEOT VIP",
+    brand: "PlatinumStar İPTV",
     nav: {
       home: "Home",
       experience: "Ervaring",
