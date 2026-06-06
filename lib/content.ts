@@ -48,7 +48,7 @@ export const content = {
     popup: {
       title: "Starten Sie Ihr eigenes Reseller-System",
       text:
-        "Kontaktieren Sie uns und erfahren Sie, wie Sie mit NEOT VIP ein eigenes Reseller-System für europäische Kunden aufbauen können.",
+        "Kontaktieren Sie uns und erfahren Sie, wie Sie mit PlatinumStar İPTV ein eigenes Reseller-System für europäische Kunden aufbauen können.",
       button: "Per WhatsApp kontaktieren",
       close: "Schließen",
     },
@@ -66,7 +66,7 @@ export const content = {
       badge: "Premium Erlebnis",
       title: "Stabiles IPTV-Erlebnis ohne Unterbrechung",
       text:
-        "NEOT VIP ist für Nutzer vorbereitet, die eine stabile, schnelle und hochwertige Unterhaltungserfahrung auf Smart TV, Android TV, Fire TV, Smartphone, Tablet und Computer wünschen.",
+        "PlatinumStar İPTV ist für Nutzer vorbereitet, die eine stabile, schnelle und hochwertige Unterhaltungserfahrung auf Smart TV, Android TV, Fire TV, Smartphone, Tablet und Computer wünschen.",
       cards: [
         {
           title: "10.000+ Live-Sender",
@@ -122,14 +122,12 @@ export const content = {
         },
         {
           title: "Kinderkanäle",
-          text:
-            "Familienfreundliche Inhalte und Unterhaltung für Kinder.",
+          text: "Familienfreundliche Inhalte und Unterhaltung für Kinder.",
           image: categoryImages.kids,
         },
         {
           title: "Erwachseneninhalte",
-          text:
-            "Zusätzliche Inhalte für Erwachsene sind ebenfalls verfügbar.",
+          text: "Zusätzliche Inhalte für Erwachsene sind ebenfalls verfügbar.",
           image: categoryImages.adult,
         },
       ],
@@ -138,7 +136,7 @@ export const content = {
       badge: "Geräte",
       title: "Kompatibel mit allen beliebten Geräten",
       text:
-        "NEOT VIP kann auf den Geräten eingerichtet werden, die Nutzer bereits zu Hause oder unterwegs verwenden.",
+        "PlatinumStar İPTV kann auf den Geräten eingerichtet werden, die Nutzer bereits zu Hause oder unterwegs verwenden.",
       items: [
         "Samsung Smart TV",
         "LG Smart TV",
@@ -173,7 +171,7 @@ export const content = {
     },
     reseller: {
       badge: "Reseller Programm",
-      title: "Bauen Sie Ihr eigenes NEOT VIP Reseller-Geschäft auf",
+      title: "Bauen Sie Ihr eigenes PlatinumStar İPTV Reseller-Geschäft auf",
       text:
         "Ein privates Partner-System für Personen, die Kundenanfragen, Aktivierungen und Support professionell verwalten möchten.",
       points: [
@@ -192,7 +190,7 @@ export const content = {
       secondary: "Kontakt aufnehmen",
     },
     why: {
-      badge: "Warum NEOT VIP",
+      badge: "Warum PlatinumStar İPTV",
       title: "Qualität ist kein Zufall",
       items: [
         {
@@ -264,8 +262,7 @@ export const content = {
       items: [
         {
           name: "Nutzer aus Deutschland",
-          text:
-            "Die Einrichtung war klar und die Darstellung wirkte hochwertig.",
+          text: "Die Einrichtung war klar und die Darstellung wirkte hochwertig.",
         },
         {
           name: "Kunde aus Frankreich",
@@ -281,19 +278,19 @@ export const content = {
     },
     contact: {
       badge: "Kontakt",
-      title: "Bereit für NEOT VIP Einrichtung oder Reseller-Zugang?",
+      title: "Bereit für PlatinumStar İPTV Einrichtung oder Reseller-Zugang?",
       text:
         "Senden Sie Ihr Land, Ihr Gerät oder Ihre Reseller-Anfrage per WhatsApp. Wir leiten Sie zum passenden nächsten Schritt.",
       button: "WhatsApp Nachricht senden",
     },
     whatsapp:
-      "Hallo, ich möchte Informationen zu NEOT VIP IPTV. Mein Land ist ... und mein Gerät ist ...",
+      "Hallo, ich möchte Informationen zu PlatinumStar İPTV. Mein Land ist ... und mein Gerät ist ...",
     popupWhatsapp:
-      "Hallo, ich möchte Informationen zum NEOT VIP Reseller-System. Mein Land ist ...",
+      "Hallo, ich möchte Informationen zum PlatinumStar İPTV Reseller-System. Mein Land ist ...",
   },
 
   en: {
-   brand: "PlatinumStar İPTV",
+    brand: "PlatinumStar İPTV",
     nav: {
       home: "Home",
       experience: "Experience",
@@ -317,7 +314,7 @@ export const content = {
     popup: {
       title: "Start your own reseller system",
       text:
-        "Contact us and learn how to build your own NEOT VIP reseller setup for European customers.",
+        "Contact us and learn how to build your own PlatinumStar İPTV reseller setup for European customers.",
       button: "Contact on WhatsApp",
       close: "Close",
     },
@@ -335,7 +332,7 @@ export const content = {
       badge: "Premium Experience",
       title: "Stable IPTV experience without interruptions",
       text:
-        "NEOT VIP is prepared for users who want a stable, fast and premium entertainment experience on Smart TV, Android TV, Fire TV, mobile, tablet and desktop.",
+        "PlatinumStar İPTV is prepared for users who want a stable, fast and premium entertainment experience on Smart TV, Android TV, Fire TV, mobile, tablet and desktop.",
       cards: [
         {
           title: "10,000+ live channels",
@@ -367,38 +364,32 @@ export const content = {
       items: [
         {
           title: "Sports Channels",
-          text:
-            "Live sports, important matches and sports broadcasts on one screen.",
+          text: "Live sports, important matches and sports broadcasts on one screen.",
           image: categoryImages.sport,
         },
         {
           title: "Movie Channels",
-          text:
-            "Movie nights, cinema atmosphere and entertainment for every taste.",
+          text: "Movie nights, cinema atmosphere and entertainment for every taste.",
           image: categoryImages.movie,
         },
         {
           title: "Series",
-          text:
-            "Popular series and daily entertainment for longer screen time.",
+          text: "Popular series and daily entertainment for longer screen time.",
           image: categoryImages.series,
         },
         {
           title: "Documentaries",
-          text:
-            "Knowledge, nature, history and interesting documentary content.",
+          text: "Knowledge, nature, history and interesting documentary content.",
           image: categoryImages.documentary,
         },
         {
           title: "Kids Channels",
-          text:
-            "Family-friendly content and entertainment for children.",
+          text: "Family-friendly content and entertainment for children.",
           image: categoryImages.kids,
         },
         {
           title: "Adult Content",
-          text:
-            "Additional adult content is also available.",
+          text: "Additional adult content is also available.",
           image: categoryImages.adult,
         },
       ],
@@ -407,7 +398,7 @@ export const content = {
       badge: "Devices",
       title: "Compatible with all popular devices",
       text:
-        "NEOT VIP can be set up on the devices people already use at home or while travelling.",
+        "PlatinumStar İPTV can be set up on the devices people already use at home or while travelling.",
       items: [
         "Samsung Smart TV",
         "LG Smart TV",
@@ -442,7 +433,7 @@ export const content = {
     },
     reseller: {
       badge: "Reseller Program",
-      title: "Build your own NEOT VIP reseller business",
+      title: "Build your own PlatinumStar İPTV reseller business",
       text:
         "A private partner system for people who want to manage customer requests, activations and support professionally.",
       points: [
@@ -461,7 +452,7 @@ export const content = {
       secondary: "Contact us",
     },
     why: {
-      badge: "Why NEOT VIP",
+      badge: "Why PlatinumStar İPTV",
       title: "Quality is not a coincidence",
       items: [
         {
@@ -481,8 +472,7 @@ export const content = {
         },
         {
           title: "24/7 live support",
-          text:
-            "Support for setup, device guidance, activation and general questions.",
+          text: "Support for setup, device guidance, activation and general questions.",
         },
         {
           title: "All devices",
@@ -533,13 +523,11 @@ export const content = {
       items: [
         {
           name: "User from Germany",
-          text:
-            "The setup was clear and the presentation felt premium.",
+          text: "The setup was clear and the presentation felt premium.",
         },
         {
           name: "Customer from France",
-          text:
-            "I sent my device and quickly received the correct guidance.",
+          text: "I sent my device and quickly received the correct guidance.",
         },
         {
           name: "Partner from Netherlands",
@@ -550,15 +538,15 @@ export const content = {
     },
     contact: {
       badge: "Contact",
-      title: "Ready for NEOT VIP setup or reseller access?",
+      title: "Ready for PlatinumStar İPTV setup or reseller access?",
       text:
         "Send your country, device or reseller request on WhatsApp. We will guide you to the right next step.",
       button: "Send WhatsApp Message",
     },
     whatsapp:
-      "Hello, I want information about NEOT VIP IPTV. My country is ... and my device is ...",
+      "Hello, I want information about PlatinumStar İPTV. My country is ... and my device is ...",
     popupWhatsapp:
-      "Hello, I want information about the NEOT VIP reseller system. My country is ...",
+      "Hello, I want information about the PlatinumStar İPTV reseller system. My country is ...",
   },
 
   fr: {
@@ -586,7 +574,7 @@ export const content = {
     popup: {
       title: "Lancez votre propre système revendeur",
       text:
-        "Contactez-nous et découvrez comment créer votre propre système revendeur NEOT VIP pour les clients européens.",
+        "Contactez-nous et découvrez comment créer votre propre système revendeur PlatinumStar İPTV pour les clients européens.",
       button: "Contact WhatsApp",
       close: "Fermer",
     },
@@ -604,7 +592,7 @@ export const content = {
       badge: "Expérience Premium",
       title: "Expérience IPTV stable sans interruption",
       text:
-        "NEOT VIP est préparé pour les utilisateurs qui veulent une expérience stable, rapide et premium sur Smart TV, Android TV, Fire TV, mobile, tablette et ordinateur.",
+        "PlatinumStar İPTV est préparé pour les utilisateurs qui veulent une expérience stable, rapide et premium sur Smart TV, Android TV, Fire TV, mobile, tablette et ordinateur.",
       cards: [
         {
           title: "10.000+ chaînes live",
@@ -660,8 +648,7 @@ export const content = {
         },
         {
           title: "Chaînes enfants",
-          text:
-            "Contenus familiaux et divertissement adapté aux enfants.",
+          text: "Contenus familiaux et divertissement adapté aux enfants.",
           image: categoryImages.kids,
         },
         {
@@ -676,7 +663,7 @@ export const content = {
       badge: "Appareils",
       title: "Compatible avec les appareils populaires",
       text:
-        "NEOT VIP peut être configuré sur les appareils déjà utilisés à la maison ou en déplacement.",
+        "PlatinumStar İPTV peut être configuré sur les appareils déjà utilisés à la maison ou en déplacement.",
       items: [
         "Samsung Smart TV",
         "LG Smart TV",
@@ -711,7 +698,7 @@ export const content = {
     },
     reseller: {
       badge: "Programme revendeur",
-      title: "Développez votre activité revendeur NEOT VIP",
+      title: "Développez votre activité revendeur PlatinumStar İPTV",
       text:
         "Un système partenaire privé pour gérer les demandes clients, activations et support de façon professionnelle.",
       points: [
@@ -730,7 +717,7 @@ export const content = {
       secondary: "Nous contacter",
     },
     why: {
-      badge: "Pourquoi NEOT VIP",
+      badge: "Pourquoi PlatinumStar İPTV",
       title: "La qualité n’est pas un hasard",
       items: [
         {
@@ -750,8 +737,7 @@ export const content = {
         },
         {
           title: "Support live 24/7",
-          text:
-            "Support pour installation, appareil, activation et questions générales.",
+          text: "Support pour installation, appareil, activation et questions générales.",
         },
         {
           title: "Tous les appareils",
@@ -802,32 +788,29 @@ export const content = {
       items: [
         {
           name: "Utilisateur en Allemagne",
-          text:
-            "L’installation était claire et la présentation paraît premium.",
+          text: "L’installation était claire et la présentation paraît premium.",
         },
         {
           name: "Client en France",
-          text:
-            "J’ai envoyé mon appareil et reçu rapidement la bonne aide.",
+          text: "J’ai envoyé mon appareil et reçu rapidement la bonne aide.",
         },
         {
           name: "Partenaire aux Pays-Bas",
-          text:
-            "La présentation revendeur est professionnelle et rassurante.",
+          text: "La présentation revendeur est professionnelle et rassurante.",
         },
       ],
     },
     contact: {
       badge: "Contact",
-      title: "Prêt pour NEOT VIP ou accès revendeur ?",
+      title: "Prêt pour PlatinumStar İPTV ou accès revendeur ?",
       text:
         "Envoyez votre pays, appareil ou demande revendeur sur WhatsApp. Nous vous guidons vers la bonne étape.",
       button: "Envoyer un message WhatsApp",
     },
     whatsapp:
-      "Bonjour, je souhaite des informations sur NEOT VIP IPTV. Mon pays est ... et mon appareil est ...",
+      "Bonjour, je souhaite des informations sur PlatinumStar İPTV. Mon pays est ... et mon appareil est ...",
     popupWhatsapp:
-      "Bonjour, je souhaite des informations sur le système revendeur NEOT VIP. Mon pays est ...",
+      "Bonjour, je souhaite des informations sur le système revendeur PlatinumStar İPTV. Mon pays est ...",
   },
 
   nl: {
@@ -855,7 +838,7 @@ export const content = {
     popup: {
       title: "Start je eigen reseller-systeem",
       text:
-        "Neem contact op en ontdek hoe je met NEOT VIP een eigen reseller-systeem voor Europese klanten opbouwt.",
+        "Neem contact op en ontdek hoe je met PlatinumStar İPTV een eigen reseller-systeem voor Europese klanten opbouwt.",
       button: "Contact via WhatsApp",
       close: "Sluiten",
     },
@@ -873,7 +856,7 @@ export const content = {
       badge: "Premium Ervaring",
       title: "Stabiele IPTV-ervaring zonder onderbreking",
       text:
-        "NEOT VIP is voorbereid voor gebruikers die een stabiele, snelle en premium entertainmentervaring willen op Smart TV, Android TV, Fire TV, mobiel, tablet en desktop.",
+        "PlatinumStar İPTV is voorbereid voor gebruikers die een stabiele, snelle en premium entertainmentervaring willen op Smart TV, Android TV, Fire TV, mobiel, tablet en desktop.",
       cards: [
         {
           title: "10.000+ live kanalen",
@@ -911,32 +894,27 @@ export const content = {
         },
         {
           title: "Filmkanalen",
-          text:
-            "Filmavonden, bioscoopgevoel en entertainment voor elke smaak.",
+          text: "Filmavonden, bioscoopgevoel en entertainment voor elke smaak.",
           image: categoryImages.movie,
         },
         {
           title: "Series",
-          text:
-            "Populaire series en dagelijks entertainment voor langere kijktijd.",
+          text: "Populaire series en dagelijks entertainment voor langere kijktijd.",
           image: categoryImages.series,
         },
         {
           title: "Documentaires",
-          text:
-            "Kennis, natuur, geschiedenis en interessante documentaire content.",
+          text: "Kennis, natuur, geschiedenis en interessante documentaire content.",
           image: categoryImages.documentary,
         },
         {
           title: "Kinderkanalen",
-          text:
-            "Gezinsvriendelijke content en entertainment voor kinderen.",
+          text: "Gezinsvriendelijke content en entertainment voor kinderen.",
           image: categoryImages.kids,
         },
         {
           title: "Volwassen content",
-          text:
-            "Aanvullende content voor volwassenen is ook beschikbaar.",
+          text: "Aanvullende content voor volwassenen is ook beschikbaar.",
           image: categoryImages.adult,
         },
       ],
@@ -945,7 +923,7 @@ export const content = {
       badge: "Apparaten",
       title: "Compatibel met populaire apparaten",
       text:
-        "NEOT VIP kan worden ingesteld op apparaten die mensen thuis of onderweg gebruiken.",
+        "PlatinumStar İPTV kan worden ingesteld op apparaten die mensen thuis of onderweg gebruiken.",
       items: [
         "Samsung Smart TV",
         "LG Smart TV",
@@ -980,7 +958,7 @@ export const content = {
     },
     reseller: {
       badge: "Reseller Programma",
-      title: "Bouw je eigen NEOT VIP reseller business",
+      title: "Bouw je eigen PlatinumStar İPTV reseller business",
       text:
         "Een privé partnersysteem voor mensen die klantvragen, activaties en support professioneel willen beheren.",
       points: [
@@ -999,7 +977,7 @@ export const content = {
       secondary: "Contact opnemen",
     },
     why: {
-      badge: "Waarom NEOT VIP",
+      badge: "Waarom PlatinumStar İPTV",
       title: "Kwaliteit is geen toeval",
       items: [
         {
@@ -1019,8 +997,7 @@ export const content = {
         },
         {
           title: "24/7 live support",
-          text:
-            "Support voor installatie, apparaten, activatie en algemene vragen.",
+          text: "Support voor installatie, apparaten, activatie en algemene vragen.",
         },
         {
           title: "Alle apparaten",
@@ -1071,13 +1048,11 @@ export const content = {
       items: [
         {
           name: "Gebruiker uit Duitsland",
-          text:
-            "De installatie was duidelijk en de presentatie voelde premium.",
+          text: "De installatie was duidelijk en de presentatie voelde premium.",
         },
         {
           name: "Klant uit Frankrijk",
-          text:
-            "Ik stuurde mijn apparaat en kreeg snel de juiste begeleiding.",
+          text: "Ik stuurde mijn apparaat en kreeg snel de juiste begeleiding.",
         },
         {
           name: "Partner uit Nederland",
@@ -1088,14 +1063,14 @@ export const content = {
     },
     contact: {
       badge: "Contact",
-      title: "Klaar voor NEOT VIP installatie of reseller toegang?",
+      title: "Klaar voor PlatinumStar İPTV installatie of reseller toegang?",
       text:
         "Stuur je land, apparaat of reseller-aanvraag via WhatsApp. Wij begeleiden je naar de juiste stap.",
       button: "WhatsApp bericht sturen",
     },
     whatsapp:
-      "Hallo, ik wil informatie over NEOT VIP IPTV. Mijn land is ... en mijn apparaat is ...",
+      "Hallo, ik wil informatie over PlatinumStar İPTV. Mijn land is ... en mijn apparaat is ...",
     popupWhatsapp:
-      "Hallo, ik wil informatie over het NEOT VIP reseller-systeem. Mijn land is ...",
+      "Hallo, ik wil informatie over het PlatinumStar İPTV reseller-systeem. Mijn land is ...",
   },
 } as const;
