@@ -118,7 +118,7 @@ const cardReveal: Variants = {
 };
 
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("de");
   const [menuOpen, setMenuOpen] = useState(false);
   const [popupOpen, setPopupOpen] = useState(false);
 
@@ -379,18 +379,18 @@ export default function Home() {
               <div className="playOrb">
                 <Play size={28} fill="white" />
               </div>
-              <strong>PlatinumStar</strong>
-              <p>Movie • Series • Screen Setup</p>
+              <strong>{t.brand}</strong>
+              <p>10.000+ Live • 100.000+ VOD • 4K</p>
             </div>
 
             <div className="screenStats">
               <div>
                 <span>4K</span>
-                <small>Screen feel</small>
+                <small>HD / FHD / 4K</small>
               </div>
               <div>
-                <span>EU</span>
-                <small>Support flow</small>
+                <span>24/7</span>
+                <small>Live Support</small>
               </div>
             </div>
           </motion.div>
@@ -401,7 +401,7 @@ export default function Home() {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           >
             <Clapperboard size={18} />
-            Movie Setup
+            100.000+ VOD
           </motion.div>
 
           <motion.div
@@ -410,7 +410,7 @@ export default function Home() {
             transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
           >
             <Users size={18} />
-            Reseller Flow
+            10.000+ Live
           </motion.div>
         </motion.div>
 
@@ -494,7 +494,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="categoryGrid"
+          className="categoryGrid photoCategoryGrid"
           variants={stagger}
           initial="hidden"
           whileInView="show"
@@ -502,12 +502,17 @@ export default function Home() {
         >
           {t.categories.items.map((item) => (
             <motion.div
-              key={item}
-              className="categoryCard cinematicCard"
+              key={item.title}
+              className="categoryPhotoCard"
               variants={cardReveal}
             >
-              <Flame size={20} />
-              <span>{item}</span>
+              <img src={item.image} alt={item.title} />
+              <div className="categoryPhotoOverlay" />
+              <div className="categoryPhotoText">
+                <Flame size={20} />
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
             </motion.div>
           ))}
         </motion.div>
