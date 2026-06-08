@@ -22,7 +22,7 @@ import {
   Users,
   X,
 } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
 import { content, languages, type Lang } from "@/lib/content";
 
 const phoneNumber = "491632399805";
@@ -118,11 +118,48 @@ const cardReveal: Variants = {
 };
 
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("de");
+  const [lang, setLang] = useState<Lang>("tr");
+  useEffect(() => {
+  const savedLang = localStorage.getItem("lang") as Lang | null;
+
+  if (savedLang) {
+    setLang(savedLang);
+  }
+}, []);
+
+useEffect(() => {
+  localStorage.setItem("lang", lang);
+}, [lang]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [popupOpen, setPopupOpen] = useState(false);
+  const [categoryPreviewImages, setCategoryPreviewImages] = useState<
+    Record<number, string>
+  >({});
+
+  const previewUrlsRef = useRef<Record<number, string>>({});
 
   const t = content[lang];
+
+  const handleCategoryImageUpload = (
+    index: number,
+    event: ChangeEvent<HTMLInputElement>
+  ) => {
+    const file = event.target.files?.[0];
+
+    if (!file) return;
+
+    if (previewUrlsRef.current[index]) {
+      URL.revokeObjectURL(previewUrlsRef.current[index]);
+    }
+
+    const imageUrl = URL.createObjectURL(file);
+    previewUrlsRef.current[index] = imageUrl;
+
+    setCategoryPreviewImages((prev) => ({
+      ...prev,
+      [index]: imageUrl,
+    }));
+  };
 
   const whatsappUrl = useMemo(() => {
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(t.whatsapp)}`;
@@ -133,6 +170,14 @@ export default function Home() {
       t.popupWhatsapp
     )}`;
   }, [t.popupWhatsapp]);
+
+  useEffect(() => {
+    return () => {
+      Object.values(previewUrlsRef.current).forEach((url) => {
+        URL.revokeObjectURL(url);
+      });
+    };
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => setPopupOpen(true), 20000);
@@ -500,21 +545,51 @@ export default function Home() {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {t.categories.items.map((item) => (
-            <motion.div
-              key={item.title}
-              className="categoryPhotoCard"
-              variants={cardReveal}
-            >
-              <img src={item.image} alt={item.title} />
-              <div className="categoryPhotoOverlay" />
-              <div className="categoryPhotoText">
-                <Flame size={20} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            </motion.div>
-          ))}
+          {t.categories.items.map((item, index) => {
+            const imageSrc = categoryPreviewImages[index] ?? item.image;
+
+            return (
+              <motion.div
+                key={item.title}
+                className="categoryPhotoCard liveCategoryCard"
+                variants={cardReveal}
+                whileHover={{
+                  y: -8,
+                  scale: 1.015,
+                }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+              >
+                <div className="categoryImageWrap">
+                  <img src={imageSrc} alt={item.title} />
+                  <div className="categoryPhotoOverlay" />
+                  <div className="categoryGlow" />
+                </div>
+
+                <div className="categoryImageTools">
+                  <span className="categoryImageHint">
+                    {String(index + 1).padStart(2, "0")} / Görsel alanı
+                  </span>
+
+                  <label className="categoryUploadBtn">
+                    Görsel yükle
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={(event) =>
+                        handleCategoryImageUpload(index, event)
+                      }
+                    />
+                  </label>
+                </div>
+
+                <div className="categoryPhotoText">
+                  <Flame size={20} />
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </section>
 

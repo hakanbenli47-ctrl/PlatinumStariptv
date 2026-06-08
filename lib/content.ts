@@ -1,28 +1,289 @@
-export type Lang = "de" | "en" | "fr" | "nl";
+export type Lang = "tr" | "de" | "fr" | "nl" | "uk";
 
 export const languages: { code: Lang; label: string }[] = [
+  { code: "tr", label: "TR" },
   { code: "de", label: "DE" },
-  { code: "en", label: "EN" },
   { code: "fr", label: "FR" },
   { code: "nl", label: "NL" },
+  { code: "uk", label: "UK" },
 ];
 
 const categoryImages = {
-  sport:
-    "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=85",
-  movie:
-    "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=85",
-  series:
-    "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=900&q=85",
-  documentary:
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",
-  kids:
-    "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=85",
-  adult:
-    "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=85",
+  sport: "/sport.jpg",
+  movie: "/movie.jpg",
+  series: "/series.jpg",
+  documentary: "/documentary.jpg",
+  kids: "/kids.jpg",
+  adult: "/adult.jpg",
 };
 
 export const content = {
+  tr: {
+    brand: "PlatinumStar İPTV",
+    nav: {
+      home: "Ana Sayfa",
+      experience: "Deneyim",
+      categories: "Kategoriler",
+      devices: "Cihazlar",
+      setup: "Kurulum",
+      reseller: "Bayilik",
+      faq: "SSS",
+      contact: "İletişim",
+    },
+    hero: {
+      badge: "Premium IPTV Servisi",
+      title: "Sınırsız eğlence. Üst seviye yayın deneyimi.",
+      subtitle:
+        "Yüksek kaliteli yayın, güçlü altyapı ve takılma-donma yaşamadan daha stabil bir IPTV deneyimi sunar.",
+      primary: "WhatsApp Destek",
+      secondary: "Bayilik Al",
+      note:
+        "Sitede herkese açık fiyat gösterilmez. Paket, deneme ve bayilik detayları WhatsApp üzerinden özel olarak paylaşılır.",
+    },
+    popup: {
+      title: "Kendi bayilik sisteminizi başlatın",
+      text:
+        "PlatinumStar İPTV ile Avrupa müşterilerine yönelik kendi bayilik sisteminizi nasıl kurabileceğinizi öğrenmek için bizimle iletişime geçin.",
+      button: "WhatsApp ile iletişime geç",
+      close: "Kapat",
+    },
+    strip: [
+      "10.000+ canlı kanal",
+      "100.000+ VOD içerik",
+      "Takılma yok",
+      "Donma yok",
+      "HD • FHD • 4K kalite",
+      "7/24 destek",
+      "Tüm cihazlarla uyumlu",
+      "Anında aktivasyon",
+    ],
+    experience: {
+      badge: "Premium Deneyim",
+      title: "Kesintisiz ve stabil IPTV deneyimi",
+      text:
+        "PlatinumStar İPTV; Smart TV, Android TV, Fire TV, telefon, tablet ve bilgisayarda hızlı, stabil ve premium bir eğlence deneyimi isteyen kullanıcılar için hazırlanmıştır.",
+      cards: [
+        {
+          title: "10.000+ canlı kanal",
+          text:
+            "Farklı ülke ve ilgi alanlarına uygun geniş canlı TV kanal seçenekleriyle güçlü bir izleme deneyimi.",
+        },
+        {
+          title: "100.000+ VOD & film",
+          text:
+            "Film, dizi ve eğlence içeriklerinden oluşan geniş VOD arşiviyle günlük kullanıma uygun içerik zenginliği.",
+        },
+        {
+          title: "Takılma yok, donma yok",
+          text:
+            "Daha akıcı oynatma, hızlı tepki ve stabil kullanım için güçlü altyapı ile hazırlanmış yayın deneyimi.",
+        },
+        {
+          title: "HD, FHD ve 4K kalite",
+          text:
+            "Modern ekranlar, Smart TV'ler ve ev sineması deneyimi için yüksek görüntü kalitesi.",
+        },
+      ],
+    },
+    categories: {
+      badge: "Kategoriler",
+      title: "Tek ekranda ihtiyaç duyulan tüm içerikler",
+      text:
+        "Spor kanalları, film kanalları, diziler, belgeseller, çocuk kanalları ve yetişkin içerikleri premium IPTV deneyimi içinde sunulur.",
+      items: [
+        {
+          title: "Spor Kanalları",
+          text:
+            "Canlı spor, önemli maçlar ve spor yayınları tek ekranda izlenebilir.",
+          image: categoryImages.sport,
+        },
+        {
+          title: "Film Kanalları",
+          text:
+            "Film geceleri, sinema atmosferi ve farklı zevklere uygun eğlence içerikleri.",
+          image: categoryImages.movie,
+        },
+        {
+          title: "Diziler",
+          text:
+            "Popüler diziler ve uzun izleme sürelerine uygun günlük eğlence içerikleri.",
+          image: categoryImages.series,
+        },
+        {
+          title: "Belgeseller",
+          text:
+            "Bilgi, doğa, tarih ve dikkat çekici belgesel içerikleri.",
+          image: categoryImages.documentary,
+        },
+        {
+          title: "Çocuk Kanalları",
+          text: "Aile kullanımına uygun çocuk içerikleri ve eğlenceli yayınlar.",
+          image: categoryImages.kids,
+        },
+        {
+          title: "Yetişkin İçerikleri",
+          text: "Ek olarak yetişkinlere özel içerikler de mevcuttur.",
+          image: categoryImages.adult,
+        },
+      ],
+    },
+    devices: {
+      badge: "Cihazlar",
+      title: "Popüler cihazların tamamıyla uyumlu",
+      text:
+        "PlatinumStar İPTV, kullanıcıların evde veya dışarıda hâlihazırda kullandığı cihazlara kurulabilir.",
+      items: [
+        "Samsung Smart TV",
+        "LG Smart TV",
+        "Android TV",
+        "Fire TV Stick",
+        "iPhone & iPad",
+        "Android Telefon",
+        "Windows PC",
+        "MacBook",
+      ],
+    },
+    setup: {
+      badge: "Kurulum",
+      title: "İletişimden aktivasyona hızlı süreç",
+      steps: [
+        {
+          title: "Cihaz ve ülke bilgisini gönderin",
+          text:
+            "WhatsApp üzerinden hangi cihazı kullandığınızı ve servisi hangi ülkede kullanmak istediğinizi yazın.",
+        },
+        {
+          title: "Uygun kurulum yönlendirmesini alın",
+          text:
+            "Smart TV, Android TV, Fire TV, telefon veya bilgisayar için size uygun kurulum yöntemi paylaşılır.",
+        },
+        {
+          title: "Anında aktivasyon",
+          text:
+            "Kurulumdan sonra erişiminiz hızlıca aktif edilir ve izlemeye başlayabilirsiniz.",
+        },
+      ],
+    },
+    reseller: {
+      badge: "Bayilik Programı",
+      title: "Kendi PlatinumStar İPTV bayilik sisteminizi kurun",
+      text:
+        "Müşteri taleplerini, aktivasyonları ve desteği profesyonel şekilde yönetmek isteyenler için özel partner sistemi.",
+      points: [
+        "Özel bayilik başvurusu",
+        "Herkese açık fiyat yok",
+        "10.000+ canlı kanal",
+        "100.000+ VOD içerik",
+        "HD / FHD / 4K kalite",
+        "7/24 destek sistemi",
+        "Tüm cihazlarla uyumlu",
+        "Anında aktivasyon",
+        "Stabil sunucu yapısı",
+        "Premium marka sunumu",
+      ],
+      primary: "Bayilik erişimi iste",
+      secondary: "İletişime geç",
+    },
+    why: {
+      badge: "Neden PlatinumStar İPTV",
+      title: "Kalite tesadüf değildir",
+      items: [
+        {
+          title: "Yüksek performans",
+          text:
+            "Hızlı tepki, akıcı kullanım ve temiz bir eğlence deneyimi için güçlü altyapı.",
+        },
+        {
+          title: "%99.9 uptime",
+          text:
+            "Daha az kesinti için stabilite ve sürekli kullanıma odaklanan yapı.",
+        },
+        {
+          title: "Güvenli iletişim",
+          text:
+            "İletişim, kurulum ve aktivasyon süreci destek üzerinden özel ve kontrollü şekilde yürütülür.",
+        },
+        {
+          title: "7/24 canlı destek",
+          text:
+            "Kurulum, cihaz yönlendirmesi, aktivasyon ve genel sorular için destek sağlanır.",
+        },
+        {
+          title: "Tüm cihazlar",
+          text:
+            "Smart TV, Android, iOS, MAG, Enigma2, PC ve daha fazla cihaz desteklenir.",
+        },
+        {
+          title: "Premium görünüm",
+          text:
+            "Sayfa ciddi, kaliteli ve ziyaretçiyi doğrudan iletişime yönlendiren bir yapı sunar.",
+        },
+      ],
+    },
+    faq: {
+      badge: "SSS",
+      title: "Sık sorulan sorular",
+      items: [
+        {
+          q: "Sitede fiyatlar gösteriliyor mu?",
+          a:
+            "Hayır. Paket, deneme ve bayilik detayları WhatsApp üzerinden özel olarak paylaşılır.",
+        },
+        {
+          q: "Takılma veya donma olur mu?",
+          a:
+            "Yapı stabil kullanım için hazırlanmıştır. Cihaz veya bağlantı kaynaklı durumlarda destek ekibi kurulum için yardımcı olur.",
+        },
+        {
+          q: "Hangi içerikler var?",
+          a:
+            "Spor kanalları, film kanalları, diziler, belgeseller, çocuk kanalları, VOD içerikleri ve ek yetişkin içerikleri mevcuttur.",
+        },
+        {
+          q: "Ne kadar içerik sunuluyor?",
+          a:
+            "Sunumda 10.000+ canlı kanal ve 100.000+ VOD içerik öne çıkarılır.",
+        },
+        {
+          q: "Hangi cihazlar destekleniyor?",
+          a:
+            "Smart TV, Android TV, Fire TV Stick, iPhone, iPad, Android, Windows, Mac, MAG ve Enigma2 desteklenir.",
+        },
+      ],
+    },
+    reviews: {
+      badge: "Yorumlar",
+      title: "Kullanıcılar ve partnerler için premium deneyim",
+      items: [
+        {
+          name: "Almanya'dan kullanıcı",
+          text: "Kurulum netti ve sunum oldukça kaliteli görünüyordu.",
+        },
+        {
+          name: "Fransa'dan müşteri",
+          text:
+            "Cihazımı gönderdim ve kısa sürede doğru kurulum yönlendirmesini aldım.",
+        },
+        {
+          name: "Hollanda'dan partner",
+          text:
+            "Bayilik sunumu profesyonel ve güven veren bir yapıda.",
+        },
+      ],
+    },
+    contact: {
+      badge: "İletişim",
+      title: "PlatinumStar İPTV kurulumu veya bayilik erişimi için hazır mısınız?",
+      text:
+        "Ülkenizi, cihazınızı veya bayilik talebinizi WhatsApp üzerinden gönderin. Size en doğru sonraki adımı paylaşalım.",
+      button: "WhatsApp mesajı gönder",
+    },
+    whatsapp:
+      "Merhaba, PlatinumStar İPTV hakkında bilgi almak istiyorum. Ülkem ... ve cihazım ...",
+    popupWhatsapp:
+      "Merhaba, PlatinumStar İPTV bayilik sistemi hakkında bilgi almak istiyorum. Ülkem ...",
+  },
+
   de: {
     brand: "PlatinumStar İPTV",
     nav: {
@@ -289,7 +550,7 @@ export const content = {
       "Hallo, ich möchte Informationen zum PlatinumStar İPTV Reseller-System. Mein Land ist ...",
   },
 
-  en: {
+  uk: {
     brand: "PlatinumStar İPTV",
     nav: {
       home: "Home",

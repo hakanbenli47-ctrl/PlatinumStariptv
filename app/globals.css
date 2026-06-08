@@ -1293,4 +1293,192 @@ p {
   .categoryPhotoText p {
     font-size: 12.5px;
   }
+}/* Kategori görsel alanı - daha canlı görünüm */
+.categoryPhotoCard {
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  border-radius: 34px;
+  background: #080914;
+  isolation: isolate;
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.categoryPhotoCard img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.04);
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+  filter: saturate(1.25) contrast(1.08) brightness(0.92);
+}
+
+.categoryPhotoCard:hover img {
+  transform: scale(1.12);
+  filter: saturate(1.45) contrast(1.15) brightness(1);
+}
+
+.categoryPhotoOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 210, 86, 0.28), transparent 32%),
+    radial-gradient(circle at 80% 15%, rgba(120, 92, 255, 0.28), transparent 34%),
+    linear-gradient(180deg, rgba(6, 7, 18, 0.08), rgba(6, 7, 18, 0.88));
+}
+
+.categoryPhotoOverlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.14) 45%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.8s ease;
+}
+
+.categoryPhotoCard:hover .categoryPhotoOverlay::after {
+  transform: translateX(120%);
+}
+
+.categoryPhotoText {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.categoryPhotoText svg {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffd86b;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+.categoryPhotoText h3 {
+  margin: 0 0 8px;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.categoryPhotoText p {
+  max-width: 420px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+/* Görsel yükleme alanı */
+.categoryUploadArea {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 4;
+}
+
+.categoryUploadArea input {
+  display: none;
+}
+
+.categoryUploadBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.categoryUploadBtn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 216, 107, 0.55);
+}
+
+/* Kategori grid biraz daha premium dursun */
+.photoCategoryGrid {
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .categoryPhotoCard {
+    min-height: 320px;
+    border-radius: 26px;
+  }
+
+  .categoryPhotoCard img {
+    min-height: 320px;
+  }
+
+  .categoryPhotoText {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .categoryUploadArea {
+    top: 14px;
+    right: 14px;
+  }
+
+  .categoryUploadBtn {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .categoryPhotoCard {
+    min-height: 285px;
+    border-radius: 22px;
+  }
+
+  .categoryPhotoCard img {
+    min-height: 285px;
+  }
+
+  .categoryPhotoText h3 {
+    font-size: 1.35rem;
+  }
+
+  .categoryPhotoText p {
+    font-size: 0.9rem;
+  }
+
+  .categoryPhotoText svg {
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+  }
 }
