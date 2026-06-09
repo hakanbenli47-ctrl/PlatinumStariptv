@@ -171,6 +171,7 @@ export const content = {
         "Müşteri taleplerini, aktivasyonları ve desteği profesyonel şekilde yönetmek isteyenler için özel partner sistemi.",
       points: [
         "Özel bayilik başvurusu",
+        "Connection bazlı Restream yayın satışı",
         "Herkese açık fiyat yok",
         "10.000+ canlı kanal",
         "100.000+ VOD içerik",
@@ -437,6 +438,7 @@ export const content = {
         "Ein privates Partner-System für Personen, die Kundenanfragen, Aktivierungen und Support professionell verwalten möchten.",
       points: [
         "Private Reseller-Anfrage",
+        "Verbindungsbasierter Verkauf von Restream-Feeds",
         "Keine öffentlichen Preise",
         "10.000+ Live-Sender",
         "100.000+ VOD Inhalte",
@@ -699,6 +701,7 @@ export const content = {
         "A private partner system for people who want to manage customer requests, activations and support professionally.",
       points: [
         "Private reseller request",
+        "Connection-based Restream stream sales",
         "No public prices",
         "10,000+ live channels",
         "100,000+ VOD contents",
@@ -964,6 +967,7 @@ export const content = {
         "Un système partenaire privé pour gérer les demandes clients, activations et support de façon professionnelle.",
       points: [
         "Demande revendeur privée",
+        "Vente de flux Restream basés sur la connexion",
         "Aucun prix public",
         "10.000+ chaînes live",
         "100.000+ contenus VOD",
@@ -1224,6 +1228,7 @@ export const content = {
         "Een privé partnersysteem voor mensen die klantvragen, activaties en support professioneel willen beheren.",
       points: [
         "Privé reseller-aanvraag",
+        "Op verbinding gebaseerde verkoop van Restream-streams",
         "Geen openbare prijzen",
         "10.000+ live kanalen",
         "100.000+ VOD content",
