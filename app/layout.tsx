@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://platinomstariptv.com"),
 
+  verification: {
+    google: "FgdDO_FH0D1nNMNEG2ec7K6zlE0MwzTqyhFHE_eH6VU",
+  },
+
   title: {
     default: "Platinom Star IPTV",
     template: "%s | Platinom Star IPTV",
@@ -71,10 +75,21 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Platinom Star IPTV",
-    description:
-      "Premium IPTV service and setup support across Europe.",
+    description: "Premium IPTV service and setup support across Europe.",
     images: ["/og-image.jpg"],
   },
 
   category: "Entertainment",
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
